@@ -5,433 +5,754 @@
  * Displays Only Home template
  *
  * @package WordPress
- * @subpackage anyar
- * @since anyar 1.0
+ * @subpackage newwpwebsite
+ * @since newwpwebsite 1.0
  */
-
  get_header(); ?>
-		<!--Slider-->
-		<section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding mbr-after-navbar" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="5000" id="slider-2">
-			<div>
-				<div>
-					<div>
-						<ol class="carousel-indicators">
-							<li data-app-prevent-settings="" data-target="#slider-2" data-slide-to="0" class="active"></li>
-							<li data-app-prevent-settings="" data-target="#slider-2" class="" data-slide-to="1"></li>
-							<li data-app-prevent-settings="" data-target="#slider-2" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner" role="listbox">
-							<div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/slide1.jpg);">
-								<div class="mbr-table-cell">
-									<div class="mbr-overlay"></div>
-									<div class="container-slide container">
-										<div class="row">
-											<div class="col-md-8 col-md-offset-2 text-xs-center">
-												<h2 class="mbr-section-title display-1">Use our trusted service to build your dream home</h2>
-												<p class="mbr-section-lead lead">We provide both interior and exterior painting services at affordable prices.</p>
-												<div class="mbr-section-btn">
-													<a class="btn btn-lg btn-success" href="#">CONTACT US</a> 
-													<a class="btn btn-lg btn-white btn-white-outline" href="#">READ MORE</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/slide2.jpg);">
-								<div class="mbr-table-cell">
-									<div class="mbr-overlay"></div>
-									<div class="container-slide container">
-										<div class="row">
-											<div class="col-md-8 col-md-offset-2 text-xs-center">
-												<h2 class="mbr-section-title display-1">Use our trusted service to build your dream home</h2>
-												<p class="mbr-section-lead lead">We provide both interior and exterior painting services at affordable prices.</p>
-												<div class="mbr-section-btn">
-													<a class="btn btn-lg btn-success" href="#">CONTACT US</a> 
-													<a class="btn btn-lg btn-white btn-white-outline" href="#">READ MORE</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/slide3.jpg);">
-								<div class="mbr-table-cell">
-									<div class="mbr-overlay"></div>
-									<div class="container-slide container">
-										<div class="row">
-											<div class="col-md-8 col-md-offset-2 text-xs-center">
-												<h2 class="mbr-section-title display-1">Use our trusted service to build your dream home</h2>
-												<p class="mbr-section-lead lead">We provide both interior and exterior painting services at affordable prices.</p>
-												<div class="mbr-section-btn">
-													<a class="btn btn-lg btn-success" href="#">CONTACT US</a> 
-													<a class="btn btn-lg btn-white btn-white-outline" href="#">READ MORE</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<a data-app-prevent-settings="" class="left carousel-control" role="button" data-slide="prev" href="#slider-2">
-						<span class="icon-prev" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-						</a>
-						<a data-app-prevent-settings="" class="right carousel-control" role="button" data-slide="next" href="#slider-2">
-						<span class="icon-next" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		 <!--About-->
-		<section class="mbr-section mbr-section-hero mbr-section-full header2 mbr-parallax-background" id="header6-3" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/room-laptop1.jpg);">
-			<div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(204, 204, 204);">
-			</div>
-			<div class="mbr-table mbr-table-full">
-				<div class="mbr-table-cell">
-					<div class="container">
-						<div class="mbr-section row">
-							<div class="mbr-table-md-up">
-								<div class="mbr-table-cell mbr-right-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
-									<div class="mbr-figure">
-										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/about.jpg">
-									</div>
-								</div>
-								<div class="mbr-table-cell col-md-5 text-xs-center text-md-left content-size">
-									<h3 class="mbr-section-title display-2">About Ben NSW painting</h3>
-									<div class="mbr-section-text">
-										<p>Ben NSW painting have provided painting services in Sydney and surrounding areas for over 12 years. We provide both interior and exterior painting services at affordable prices.</p>
-									</div>
-									<div class="mbr-section-btn"><a class="btn btn-lg btn-black-outline btn-black" href="#">MORE</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="#about" class="scrollto">Get Started</a>
+      </div>
+    </div>
+  </div>
 
-		<!--Services-->
-		<section class="mbr-cards mbr-section mbr-section-nopadding" id="features2-8" style="background-color: rgb(255, 255, 255);">
-			<div class="mbr-cards-row row striped">
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/freequotes.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Free competitive quotes and consultation</h4>
-								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/painting.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Painting</h4>
-								<p class="card-text">BEN NSW Sydney Painting Company is a member of Master Painters Australia, which stands as an indication of the quality of the services...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/decoration.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Decoration</h4>
-								<p class="card-text">BEN NSW Sydney Painting Company is a member of Master Painters Australia, which stands as an indication of the quality of the services...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/silicon.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Silicon</h4>
-								<p class="card-text">BEN NSW Painting is the most reliable and trusted residential painting company in Sydney. Our professional team of painters is trained and...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
 
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12 white" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/decorative-finishes.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Decorative Finishes</h4>
-								<p class="card-text">BEN NSW Painting’s Decorative Finishes range creates limitless possibilities for natural aesthetics – from a traditional organic, clay plaster...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12 black" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/texture-finishes.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Texture Finishes</h4>
-								<p class="card-text">BEN NSW Painting’s Decorative Finishes range creates limitless possibilities for natural aesthetics – from a traditional organic, clay plaster...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12 white" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/top-coating-rendered-walls.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Top Coating Rendered Walls</h4>
-								<p class="card-text">Plaster is coating a surface with cement render or plaster finish on an internal or external wall. Plaster is for decoration and...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mbr-cards-col col-md-3 col-sm-6 col-xs-12 black" style="padding-top: 80px; padding-bottom: 80px;">
-					<div class="container">
-						<div class="card cart-block">
-							<div class="card-img">
-								 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/interior-and-exterior.jpg">
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">Interior and Exterior Painting Services</h4>
-								<p class="card-text">There is nothing quite like a coat of paint to lift up the interior of your home. Interior house painting done properly...</p>
-								<div class="card-btn"><a href="#" class="btn btn-primary">MORE</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <h1 class="logo"><a href="index.html">Anyar</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-		<!--Add-->
-		<section class="mbr-section article mbr-parallax-background" id="msg-box8-b" style="background-image: url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/add-bg.jpg); padding-top: 120px; padding-bottom: 120px;">
-			<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);">
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-xs-center">
-						<h3 class="mbr-section-title display-2">Would You like to work with us?.&nbsp;</h3>
-						<div class="lead">
-							<p><a style="background: #fff;border-color: #fff;color: #333;font-weight: 600;    font-size: 16px;" href="#" class="btn btn-primary">Contact Now</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    </div>
+  </header><!-- End Header -->
 
-		<!--Gallery-->
-		<section class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" id="gallery1-5" data-filter="false" style="background-color: rgb(255, 255, 255); padding-top: 0rem; padding-bottom: 0rem;">
-			<!-- Filter -->
-			<!-- Gallery -->
-			<div class="mbr-gallery-row">
-				<div class=" mbr-gallery-layout-default">
-					<div>
-						<div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Awesome" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="0" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/bike-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Responsive" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="1" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/code-man-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Creative" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="2" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coworkers-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Animated" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="3" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/desktop-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Awesome" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="4" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/room-laptop-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Beautiful" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="5" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/table-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Responsive" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="6" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/windows-books-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-							<div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p0" data-tags="Animated" data-video-url="false">
-								<div href="#lb-gallery1-5" data-slide-to="7" data-toggle="modal">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/working-area-small.jpg">
-									<span class="icon-focus"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<!-- Lightbox -->
-			<div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-5">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-body">
-							<ol class="carousel-indicators">
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" class=" active" data-slide-to="0"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="1"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="2"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="3"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="4"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="5"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="6"></li>
-								<li data-app-prevent-settings="" data-target="#lb-gallery1-5" data-slide-to="7"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/bike.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/code-man.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coworkers.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/desktop.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/room-laptop.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/table.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/windows-books.jpg">
-								</div>
-								<div class="carousel-item">
-									<img alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/working-area.jpg">
-								</div>
-							</div>
-							<a class="left carousel-control" role="button" data-slide="prev" href="#lb-gallery1-5">
-							<span class="icon-prev" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" role="button" data-slide="next" href="#lb-gallery1-5">
-							<span class="icon-next" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-							</a>
-							<a class="close" href="#" role="button" data-dismiss="modal">
-							<span aria-hidden="true">×</span>
-							<span class="sr-only">Close</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--Gallery-->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
 
-		<!--Testimonials-->
-		<section class="mbr-section" id="testimonials3-f" style="background-color: rgb(48, 48, 48); padding-top: 120px; padding-bottom: 40px;">
-			<div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);">
-			</div>
-			<div class="mbr-section mbr-section__container mbr-section__container--middle">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 text-xs-center">
-							<h3 class="mbr-section-title display-2">WHAT OUR FANTASTIC USERS SAY</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mbr-testimonials mbr-section mbr-section-nopadding">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-lg-4">
-							<div class="mbr-testimonial card">
-								<div class="card-block">
-									<p>“I recently had work done by BEN NSW Sydney Painting & Maintenance. We had work done on our driveway, which was looking very grey and mould was growing. BEN NSW Sydney...”</p>
-								</div>
-								<div class="mbr-author card-footer">
-									<div class="mbr-author-name">Ashleigh B.</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-lg-4">
-							<div class="mbr-testimonial card">
-								<div class="card-block">
-									<p>“We recently had excellent work completed on the outside of our house including the deck by BEN NSW Sydney Painting & Maintenance. We had three other quotes given on...”</p>
-								</div>
-								<div class="mbr-author card-footer">
-									<div class="mbr-author-name">Debie S.</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12 col-lg-4">
-							<div class="mbr-testimonial card">
-								<div class="card-block">
-									<p>“We recently had work done on our property by BEN NSW Sydney Painters & Maintenance. My partner and I are exceptionally happy with the completed work. I was very...”</p>
-								</div>
-								<div class="mbr-author card-footer">
-									<div class="mbr-author-name">Linda G.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<center style="margin-top: 60px;">
-								<p class="text-center"><a style="background: #fff;border-color: #fff;color: #333;font-weight: 600;    font-size: 16px;" href="#" class="btn btn-primary">View All</a></p>
-							</center>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Anyar</span></h2>
+          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
 
-		<!--MAp-->
-		<section class="mbr-section mbr-section-nopadding" id="map1-h">
-			<div class="mbr-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26502.764963146114!2d151.19248232816886!3d-33.86786927798657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney+NSW+2000!5e0!3m2!1sen!2sau!4v1489110859471" allowfullscreen=""></iframe></div>
-		</section>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
 
-	        <?php get_footer(); ?>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="clients-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="fade-right">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+
+            <div class="content">
+              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">Dolor Sitema</a></h4>
+              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">Nemo Enim</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="#">Magni Dolore</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">Eiusmod Tempor</a></h4>
+              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfoio Section ======= -->
+    <section id="portfolio" class="portfoio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfoio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfoio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Advanced</span>
+              <h3>Ultimate</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main>
+  <!-- End #main -->
+
+<?php get_footer(); ?>

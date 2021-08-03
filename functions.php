@@ -1,25 +1,26 @@
+<?php echo esc_url( get_template_directory_uri() ); ?>
 <?php
 /**
- * anyar functions and definitions
+ * newwpwebsite functions and definitions
  *
  * @package WordPress
- * @subpackage anyar
- * @since anyar 1.0
+ * @subpackage newwpwebsite
+ * @since newwpwebsite 1.0
  */
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since anyar 1.0
+ * @since newwpwebsite 1.0
  */
- load_theme_textdomain( 'anyar' );
+ load_theme_textdomain( 'newwpwebsite' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 825, 510, true );
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'anyar' ),
-		'header'  => __( 'Header menu', 'anyar' ),
-		'footer'  => __( 'Footer menu', 'anyar' ),
+		'primary' => __( 'Primary Menu',      'newwpwebsite' ),
+		'header'  => __( 'Header menu', 'newwpwebsite' ),
+		'footer'  => __( 'Footer menu', 'newwpwebsite' ),
 	) );
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
@@ -80,9 +81,9 @@ jQuery(document).ready(function() {
 */
 function wpdocs_theme_slug_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Main Sidebar', 'anyar' ),
+        'name'          => __( 'Main Sidebar', 'newwpwebsite' ),
         'id'            => 'sidebar-1',
-        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'anyar' ),
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'newwpwebsite' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
@@ -97,23 +98,23 @@ add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
 function slider_post_type() {
 	$labels = array(
-		'name'                => _x( 'Slider', 'Post Type General Name', 'anyar' ),
-		'singular_name'       => _x( 'slider', 'Post Type Singular Name', 'anyar' ),
-		'menu_name'           => __( 'slider', 'anyar' ),
-		'parent_item_colon'   => __( 'Parent slider', 'anyar' ),
-		'all_items'           => __( 'All slider', 'anyar' ),
-		'view_item'           => __( 'View slider', 'anyar' ),
-		'add_new_item'        => __( 'Add New slider', 'anyar' ),
-		'add_new'             => __( 'Add New', 'anyar' ),
-		'edit_item'           => __( 'Edit slider', 'anyar' ),
-		'update_item'         => __( 'Update slider', 'anyar' ),
-		'search_items'        => __( 'Search slider', 'anyar' ),
-		'not_found'           => __( 'Not Found', 'anyar' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'anyar' ),
+		'name'                => _x( 'Slider', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'slider', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'slider', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent slider', 'newwpwebsite' ),
+		'all_items'           => __( 'All slider', 'newwpwebsite' ),
+		'view_item'           => __( 'View slider', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New slider', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit slider', 'newwpwebsite' ),
+		'update_item'         => __( 'Update slider', 'newwpwebsite' ),
+		'search_items'        => __( 'Search slider', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
 	);
 	$args = array(
-		'label'               => __( 'Slider', 'anyar' ),
-		'description'         => __( 'Slider news and reviews', 'anyar' ),
+		'label'               => __( 'Slider', 'newwpwebsite' ),
+		'description'         => __( 'Slider news and reviews', 'newwpwebsite' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
 		'taxonomies'          => array( 'genres' ),	
@@ -172,23 +173,23 @@ function subtitle( $post ) {
 
 function testi_post_type() {
 	$labels = array(
-		'name'                => _x( 'Testimonials', 'Post Type General Name', 'anyar' ),
-		'singular_name'       => _x( 'Testimonials', 'Post Type Singular Name', 'anyar' ),
-		'menu_name'           => __( 'Testimonials', 'anyar' ),
-		'parent_item_colon'   => __( 'Parent Testimonials', 'anyar' ),
-		'all_items'           => __( 'All Testimonials', 'anyar' ),
-		'view_item'           => __( 'View Testimonials', 'anyar' ),
-		'add_new_item'        => __( 'Add New Testimonials', 'anyar' ),
-		'add_new'             => __( 'Add New', 'anyar' ),
-		'edit_item'           => __( 'Edit Testimonials', 'anyar' ),
-		'update_item'         => __( 'Update Testimonials', 'anyar' ),
-		'search_items'        => __( 'Search Testimonials', 'anyar' ),
-		'not_found'           => __( 'Not Found', 'anyar' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'anyar' ),
+		'name'                => _x( 'Testimonials', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'Testimonials', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'Testimonials', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent Testimonials', 'newwpwebsite' ),
+		'all_items'           => __( 'All Testimonials', 'newwpwebsite' ),
+		'view_item'           => __( 'View Testimonials', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New Testimonials', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit Testimonials', 'newwpwebsite' ),
+		'update_item'         => __( 'Update Testimonials', 'newwpwebsite' ),
+		'search_items'        => __( 'Search Testimonials', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
 	);
 	$args = array(
-		'label'               => __( 'Testimonials', 'anyar' ),
-		'description'         => __( 'Testimonials news and reviews', 'anyar' ),
+		'label'               => __( 'Testimonials', 'newwpwebsite' ),
+		'description'         => __( 'Testimonials news and reviews', 'newwpwebsite' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
 		'taxonomies'          => array( 'genres' ),	
@@ -249,6 +250,7 @@ function save_subtitle( $post_ID, $post, $update ) {
 
 add_action( 'edit_form_after_title', 'subtitle', 20 );
 add_action( 'wp_insert_post', 'save_subtitle', 20, 3 );
+
 
 /*
 * FILE LINK CODE

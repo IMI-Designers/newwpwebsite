@@ -8,20 +8,20 @@ function optionsframework_options() {
 
 	// Test data
 	$test_array = array(
-		'one' => __( 'One', 'anyar' ),
-		'two' => __( 'Two', 'anyar' ),
-		'three' => __( 'Three', 'anyar' ),
-		'four' => __( 'Four', 'anyar' ),
-		'five' => __( 'Five', 'anyar' )
+		'one' => __( 'One', 'newwpwebsite' ),
+		'two' => __( 'Two', 'newwpwebsite' ),
+		'three' => __( 'Three', 'newwpwebsite' ),
+		'four' => __( 'Four', 'newwpwebsite' ),
+		'five' => __( 'Five', 'newwpwebsite' )
 	);
 
 	// Multicheck Array
 	$multicheck_array = array(
-		'one' => __( 'French Toast', 'anyar' ),
-		'two' => __( 'Pancake', 'anyar' ),
-		'three' => __( 'Omelette', 'anyar' ),
-		'four' => __( 'Crepe', 'anyar' ),
-		'five' => __( 'Waffle', 'anyar' )
+		'one' => __( 'French Toast', 'newwpwebsite' ),
+		'two' => __( 'Pancake', 'newwpwebsite' ),
+		'three' => __( 'Omelette', 'newwpwebsite' ),
+		'four' => __( 'Crepe', 'newwpwebsite' ),
+		'five' => __( 'Waffle', 'newwpwebsite' )
 	);
 
 	// Multicheck Defaults
@@ -82,33 +82,33 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
-		'name' => __( 'Basic Settings', 'anyar' ),
+		'name' => __( 'Basic Settings', 'newwpwebsite' ),
 		'type' => 'heading'
 	);
     $options[] = array(
-		'name' => __( 'Add Logo', 'anyar' ),
-		'placeholder' => __( 'upload logo.', 'anyar' ),
-		'id' => 'anyar_logo',
+		'name' => __( 'Add Logo', 'newwpwebsite' ),
+		'placeholder' => __( 'upload logo.', 'newwpwebsite' ),
+		'id' => 'newwpwebsite_logo',
 		'type' => 'upload'
 	);
 
 	    $options[] = array(
-		'name' => __( 'Add Ratina Logo', 'anyar' ),
-		'placeholder' => __( 'upload ratina logo.', 'anyar' ),
+		'name' => __( 'Add Ratina Logo', 'newwpwebsite' ),
+		'placeholder' => __( 'upload ratina logo.', 'newwpwebsite' ),
 		'id' => 'ratina_logo',
 		'type' => 'upload'
 	);
 
 	$options[] = array(
-		'name' => __( 'Add Footer Logo', 'anyar' ),
-		'placeholder' => __( 'upload Footer logo.', 'anyar' ),
+		'name' => __( 'Add Footer Logo', 'newwpwebsite' ),
+		'placeholder' => __( 'upload Footer logo.', 'newwpwebsite' ),
 		'id' => 'footer_logo',
 		'type' => 'upload'
 	);
 
 		$options[] = array(
-		'name' => __( 'Open Time Add', 'anyar' ),
-		'placeholder' => __( 'Open Time link', 'anyar' ),
+		'name' => __( 'Open Time Add', 'newwpwebsite' ),
+		'placeholder' => __( 'Open Time link', 'newwpwebsite' ),
 		'id' => 'time',
 		'type' => 'text'
 	);
@@ -117,8 +117,8 @@ function optionsframework_options() {
 	
 	
 	$options[] = array(
-		'name' => __( 'Phone No:', 'anyar' ),
-		'placeholder' => __( 'Enter Phone No.', 'anyar' ),
+		'name' => __( 'Phone No:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Phone No.', 'newwpwebsite' ),
 		'id' => 'phone',
 		'std' => '+ 0406 583 082',
 		'type' => 'text'
@@ -126,68 +126,68 @@ function optionsframework_options() {
 
 	
 	$options[] = array(
-		'name' => __( 'Email:', 'anyar' ),
-		'placeholder' => __( 'Enter Email Address.', 'anyar' ),
+		'name' => __( 'Email:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Email Address.', 'newwpwebsite' ),
 		'id' => 'email',
 		'std' => 'azqualitycars.605belmore@gmail.com',
 		'type' => 'text'
 	);
 	$options[] = array(
-		'name' => __( 'Address:', 'anyar' ),
-		'placeholder' => __( 'Your Address.', 'anyar' ),
+		'name' => __( 'Address:', 'newwpwebsite' ),
+		'placeholder' => __( 'Your Address.', 'newwpwebsite' ),
 		'id' => 'address',
 		'type' => 'textarea'
 	);
 
 		$options[] = array(
-		'name' => __( 'anyar:', 'anyar' ),
-		'placeholder' => __( 'anyar link.', 'anyar' ),
-		'id' => 'anyar',
+		'name' => __( 'newwpwebsite:', 'newwpwebsite' ),
+		'placeholder' => __( 'newwpwebsite link.', 'newwpwebsite' ),
+		'id' => 'newwpwebsite',
 		'std' => '#',
 		'type' => 'text'
 	);
 
     $options[] = array(
-		'name' => __( 'Facebook:', 'anyar' ),
-		'placeholder' => __( 'Enter Facebook link.', 'anyar' ),
+		'name' => __( 'Facebook:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Facebook link.', 'newwpwebsite' ),
 		'id' => 'facebook',
 		'std' => '#',
 		'type' => 'text'
 	);
 	$options[] = array(
-		'name' => __( 'Instagram:', 'anyar' ),
-		'placeholder' => __( 'Enter instagram link', 'anyar' ),
+		'name' => __( 'Instagram:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter instagram link', 'newwpwebsite' ),
 		'id' => 'instagram',
 		'std' => '#',
 		'type' => 'text'
 	);
 	$options[] = array(
-		'name' => __( 'Youtube:', 'anyar' ),
-		'placeholder' => __( 'Enter Youtube link', 'anyar' ),
+		'name' => __( 'Youtube:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Youtube link', 'newwpwebsite' ),
 		'id' => 'youtube',
 		'std' => '#',
 		'type' => 'text'
 	);
 
  $options[] = array(
-		'name' => __( 'Twitter:', 'anyar' ),
-		'placeholder' => __( 'Enter Twitter link.', 'anyar' ),
+		'name' => __( 'Twitter:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Twitter link.', 'newwpwebsite' ),
 		'id' => 'twitter',
 		'std' => '#',
 		'type' => 'text'
 	);
 
   $options[] = array(
-		'name' => __( 'Linkedin:', 'anyar' ),
-		'placeholder' => __( 'Enter Linkedin link.', 'anyar' ),
+		'name' => __( 'Linkedin:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Linkedin link.', 'newwpwebsite' ),
 		'id' => 'linkedin',
 		'std' => '#',
 		'type' => 'text'
 	);
 
    $options[] = array(
-		'name' => __( 'Youtube:', 'anyar' ),
-		'placeholder' => __( 'Enter Youtube link.', 'anyar' ),
+		'name' => __( 'Youtube:', 'newwpwebsite' ),
+		'placeholder' => __( 'Enter Youtube link.', 'newwpwebsite' ),
 		'id' => 'youtube',
 		'std' => '#',
 		'type' => 'text'
@@ -195,7 +195,7 @@ function optionsframework_options() {
 
 
 	$options[] = array(
-		'name' => __( 'Footer Text', 'anyar' ),
+		'name' => __( 'Footer Text', 'newwpwebsite' ),
 		'type' => 'heading'
 	);
 
@@ -214,7 +214,7 @@ function optionsframework_options() {
 	);
 
 	$options[] = array(
-		'name' => __( 'Footer About Text', 'anyar' ),
+		'name' => __( 'Footer About Text', 'newwpwebsite' ),
 		'desc' => sprintf( __( 'You can also pass settings to the editor.  Read more about wp_editor in <a href="%1$s" target="_blank">the WordPress codex</a>', 'anyar' ), 'http://codex.wordpress.org/Function_Reference/wp_editor' ),
 		'id' => 'footer_text',
 		'type' => 'editor',
