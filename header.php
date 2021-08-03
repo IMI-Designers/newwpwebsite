@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Anyar Bootstrap Template - Index</title>
+  <title>Anyar - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,8 +36,8 @@
 </head>
 
 <body>
-  <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="fixed-top d-flex align-items-center ">
+<!-- ======= Top Bar ======= -->
+<div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
@@ -57,10 +55,10 @@
 
       <h1 class="logo"><a href="index.html">Anyar</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href=index.html" class="logo"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
-        <ul>
+        <!--ul class="navbar-nav">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
@@ -86,7 +84,21 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
+        </ul-->
+        <?php   wp_nav_menu( array(
+		                                    'theme_location'    => 'primary',
+		                                    'depth'             => 2,
+		                                    'container'         => 'ul',
+		                                    'container_class'   => '',
+		                                    'container_id'      => 'menu_main',
+		                                    'menu_class'        => 'navbar-nav',
+		                                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+		                                    'walker'            => new WP_Bootstrap_Navwalker())
+		                                );
+		                                ?>
+
+
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 

@@ -9,8 +9,7 @@
  * @since newwpwebsite 1.0
  */
  get_header(); ?>
-
-
+ 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">

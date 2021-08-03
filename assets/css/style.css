@@ -1,14 +1,55 @@
+@charset "UTF-8";
 /**
 * Template Name: Anyar - v4.3.0
 * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+@font-face {
+  font-family: 'ooredoo-Heavy';
+  src: url(fonts/Ooredoo-Heavy.eot);
+  src: url(fonts/Ooredoo-Heavy.eot?#iefix) format("embedded-opentype"), url(fonts/Ooredoo-Heavy.woff) format("woff"), url(fonts/Ooredoo-Heavy.ttf) format("truetype"), url(fonts/Ooredoo-Heavy.svg#noto_sansbold) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ooredoo-Regular';
+  src: url(fonts/ooredoo-Regular.eot);
+  src: url(fonts/ooredoo-Regular.eot?#iefix) format("embedded-opentype"), url(fonts/ooredoo-Regular.ttf) format("truetype"), url(fonts/FuturaStd-Book.svg#svgFontName) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ooredoo-light';
+  src: url(fonts/ooredoo-light.eot);
+  src: url(fonts/ooredoo-light.eot?#iefix) format("embedded-opentype"), url(fonts/ooredoo-light-webfont.woff) format("woff"), url(fonts/FuturaStd-Light.ttf) format("truetype"), url(fonts/FuturaStd-Light.svg#svgFontName) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noto_sansregular';
+  src: url(fonts/NotoSans-Regular-webfont.eot);
+  src: url(fonts/NotoSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(fonts/NotoSans-Regular-webfont.woff) format("woff"), url(fonts/NotoSans-Regular-webfont.ttf) format("truetype"), url(fonts/NotoSans-Regular-webfont.svg#noto_sansregular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noto_sanslight';
+  src: url("fonts/notosans-light-webfont.woff2") format("woff2"), url("fonts/notosans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:"ooredoo-Regular", "Open Sans", sans-serif;
   color: #444444;
 }
 
@@ -23,7 +64,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "ooredoo-Heavy", "Open Sans", sans-serif;;
 }
 
 /*--------------------------------------------------------------
@@ -223,9 +264,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar ul {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: contents;
   list-style: none;
   align-items: center;
+  flex-direction: inherit;
 }
 
 .navbar li {
