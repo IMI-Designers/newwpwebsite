@@ -35,16 +35,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <!-- Demo styles -->
-<style>
-.swiperbanner .swiper-slide {
-background-size:cover;background-position:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;
-height:500px;
-}
-.swiperbanner span{color:#fff;font-size:35px;padding:15px;background: rgba(0, 0, 0, 0.3)}
-.swiperbanner p{color:#fff;font-size:25px;padding:15px;background: rgba(0, 0, 0, 0.3)}
-</style>
-
 </head>
 
 <body>
@@ -68,12 +58,10 @@ height:500px;
 
       <h1 class="logo"><a href="index.html">Anyar</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href=index.html" class="logo">
-        <img src="assets/img/logo.png" alt="" class="img-fluid">
-      </a>-->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
-        <!--<ul class="navbar-nav">
+        <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
@@ -99,7 +87,12 @@ height:500px;
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
         
         <!--Navber Dynamic Code-->
 <?php wp_nav_menu(array(
