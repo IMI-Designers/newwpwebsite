@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Anyar - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
   <!-- Favicons -->
   <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/favicon.png" rel="icon">
   <link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -35,6 +32,6 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  
 </head>
-
 <body>

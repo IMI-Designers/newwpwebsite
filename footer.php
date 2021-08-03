@@ -1,7 +1,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
     <div class="footer-newsletter">
       <div class="container">
         <div class="row">

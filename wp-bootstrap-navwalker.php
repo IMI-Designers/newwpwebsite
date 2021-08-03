@@ -4,7 +4,6 @@
  *
  * @package WP-Bootstrap-Navwalker
  */
-
 /*
  * Class Name: WP_Bootstrap_Navwalker
  * Plugin Name: WP Bootstrap Navwalker
