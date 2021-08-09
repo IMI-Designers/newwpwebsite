@@ -100,10 +100,13 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>About Us</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      <?php  $posts = new WP_Query( array( 'post_type' => 'aboutus' , 'order' => 'ASC' ) );
+while($posts->have_posts()) : $posts->the_post();?>
+      <div class="section-title">
+          <h2><?php echo get_the_title();?></h2>
+          <p><?php echo get_the_content();?></p>
         </div>
+        <?php endwhile; ?>
 
         <div class="row content">
           <div class="col-lg-6">
@@ -645,7 +648,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>A108 Adam Street, New York, NY 500004</p>
               </div>
 
               <div class="email">
@@ -659,35 +662,15 @@
                 <h4>Call:</h4>
                 <p>+1 5589 55488 55s</p>
               </div>
-
             </div>
 
           </div>
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          <form action="#">
+          <?php echo do_shortcode( '[contact-form-7 id="47" title="contactus form"]' ); ?>
+          </form>
 
           </div>
 

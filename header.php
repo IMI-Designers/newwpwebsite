@@ -37,16 +37,20 @@
 
 <body>
 <!-- ======= Top Bar ======= -->
-<div id="topbar" class="fixed-top d-flex align-items-center ">
+<div id="topbar" class="fixed-top d-flex align-items-center">
+  <?php  $posts = new WP_Query( array( 'post_type' => 'topheader' , 'order' => 'ASC' ) );
+while($posts->have_posts()) : $posts->the_post();?>
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+      <div class="contact-info d-flex align-items-center m-0">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com"><?php echo get_the_title();?>
+        </a>
+        <i class="bi bi-phone-fill phone-icon"></i> <?php echo the_excerpt(); ?>
       </div>
       <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto">Get Started</a>
+        <a href="#about" class="scrollto"><?php echo get_the_content();?></a>
       </div>
     </div>
+  <?php endwhile; ?>
   </div>
 
   <!-- ======= Header ======= -->

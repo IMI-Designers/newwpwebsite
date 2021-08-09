@@ -1,25 +1,25 @@
 <?php
 /**
- * website functions and definitions
+ * newwpwebsite functions and definitions
  *
  * @package WordPress
- * @subpackage website
- * @since website 1.0
+ * @subpackage newwpwebsite
+ * @since newwpwebsite 1.0
  */
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since website 1.0
+ * @since newwpwebsite 1.0
  */
- load_theme_textdomain( 'website' );
+ load_theme_textdomain( 'newwpwebsite' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 825, 510, true );
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'website' ),
-		'header'  => __( 'Header menu', 'website' ),
-		'footer'  => __( 'Footer menu', 'website' ),
+		'primary' => __( 'Primary Menu',      'newwpwebsite' ),
+		'header'  => __( 'Header menu', 'newwpwebsite' ),
+		'footer'  => __( 'Footer menu', 'newwpwebsite' ),
 	) );
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
@@ -56,9 +56,7 @@ load_template( $optionsfile );
  */
  
 add_action( 'optionsframework_custom_scripts', 'optionsframework_custom_scripts' );
-
 function optionsframework_custom_scripts() { ?>
-
 <script type="text/javascript">
 jQuery(document).ready(function() {
 
@@ -69,7 +67,6 @@ jQuery(document).ready(function() {
 	if (jQuery('#example_showhidden:checked').val() !== undefined) {
 		jQuery('#section-example_text_hidden').show();
 	}
-
 });
 </script>
 <?php
@@ -79,9 +76,9 @@ jQuery(document).ready(function() {
 */
 function wpdocs_theme_slug_widgets_init() {
     register_sidebar( array(
-        'name'          => __( 'Main Sidebar', 'website' ),
+        'name'          => __( 'Main Sidebar', 'newwpwebsite' ),
         'id'            => 'sidebar-1',
-        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'website' ),
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'newwpwebsite' ),
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<h2 class="widgettitle">',
@@ -90,29 +87,74 @@ function wpdocs_theme_slug_widgets_init() {
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
+
+/*
+* Creating a function to create our topheader
+*/
+function topheader_post_type() {
+	$labels = array(
+		'name'                => _x( 'topheader', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'topheader', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'topheader', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent topheader', 'newwpwebsite' ),
+		'all_items'           => __( 'All topheader', 'newwpwebsite' ),
+		'view_item'           => __( 'View topheader', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New topheader', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit topheader', 'newwpwebsite' ),
+		'update_item'         => __( 'Update topheader', 'newwpwebsite' ),
+		'search_items'        => __( 'Search topheader', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
+	);
+	$args = array(
+		'label'               => __( 'topheader', 'newwpwebsite' ),
+		'description'         => __( 'topheader news and reviews', 'newwpwebsite' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
+		'taxonomies'          => array( 'genres' ),	
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'taxonomies'          => array( 'category' ),
+	);
+	register_post_type( 'topheader', $args );
+}
+add_action( 'init', 'topheader_post_type', 0 );
+
+
 /*
 * Creating a function to create our slider
 */
-
 function slider_post_type() {
 	$labels = array(
-		'name'                => _x( 'Slider', 'Post Type General Name', 'website' ),
-		'singular_name'       => _x( 'slider', 'Post Type Singular Name', 'website' ),
-		'menu_name'           => __( 'slider', 'website' ),
-		'parent_item_colon'   => __( 'Parent slider', 'website' ),
-		'all_items'           => __( 'All slider', 'website' ),
-		'view_item'           => __( 'View slider', 'website' ),
-		'add_new_item'        => __( 'Add New slider', 'website' ),
-		'add_new'             => __( 'Add New', 'website' ),
-		'edit_item'           => __( 'Edit slider', 'website' ),
-		'update_item'         => __( 'Update slider', 'website' ),
-		'search_items'        => __( 'Search slider', 'website' ),
-		'not_found'           => __( 'Not Found', 'website' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'website' ),
+		'name'                => _x( 'Slider', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'slider', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'slider', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent slider', 'newwpwebsite' ),
+		'all_items'           => __( 'All slider', 'newwpwebsite' ),
+		'view_item'           => __( 'View slider', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New slider', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit slider', 'newwpwebsite' ),
+		'update_item'         => __( 'Update slider', 'newwpwebsite' ),
+		'search_items'        => __( 'Search slider', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
 	);
 	$args = array(
-		'label'               => __( 'Slider', 'website' ),
-		'description'         => __( 'Slider news and reviews', 'website' ),
+		'label'               => __( 'Slider', 'newwpwebsite' ),
+		'description'         => __( 'Slider news and reviews', 'newwpwebsite' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
 		'taxonomies'          => array( 'genres' ),	
@@ -135,13 +177,139 @@ function slider_post_type() {
 }
 add_action( 'init', 'slider_post_type', 0 );
 
+/*
+* Creating a function to create our aboutus
+*/
+function aboutus_post_type() {
+	$labels = array(
+		'name'                => _x( 'aboutus', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'aboutus', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'aboutus', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent aboutus', 'newwpwebsite' ),
+		'all_items'           => __( 'All aboutus', 'newwpwebsite' ),
+		'view_item'           => __( 'View aboutus', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New aboutus', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit aboutus', 'newwpwebsite' ),
+		'update_item'         => __( 'Update aboutus', 'newwpwebsite' ),
+		'search_items'        => __( 'Search aboutus', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
+	);
+	$args = array(
+		'label'               => __( 'aboutus', 'newwpwebsite' ),
+		'description'         => __( 'aboutus news and reviews', 'newwpwebsite' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
+		'taxonomies'          => array( 'genres' ),	
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'taxonomies'          => array( 'category' ),
+	);
+	register_post_type( 'aboutus', $args );
+}
+add_action( 'init', 'aboutus_post_type', 0 );
 
 
+/*
+* Creating a function to create our paragraph
+*/
+function paragraph_post_type() {
+	$labels = array(
+		'name'                => _x( 'paragraph', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'paragraph', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'paragraph', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent paragraph', 'newwpwebsite' ),
+		'all_items'           => __( 'All paragraph', 'newwpwebsite' ),
+		'view_item'           => __( 'View paragraph', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New paragraph', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit paragraph', 'newwpwebsite' ),
+		'update_item'         => __( 'Update paragraph', 'newwpwebsite' ),
+		'search_items'        => __( 'Search paragraph', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
+	);
+	$args = array(
+		'label'               => __( 'paragraph', 'newwpwebsite' ),
+		'description'         => __( 'paragraph news and reviews', 'newwpwebsite' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
+		'taxonomies'          => array( 'genres' ),	
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'taxonomies'          => array( 'category' ),
+	);
+	register_post_type( 'paragraph', $args );
+}
+add_action( 'init', 'paragraph_post_type', 0 );
 
 
+/*
+* Creating a function to create our contact
+*/
+function contact_post_type() {
+	$labels = array(
+		'name'                => _x( 'contact', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'contact', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'contact', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent contact', 'newwpwebsite' ),
+		'all_items'           => __( 'All contact', 'newwpwebsite' ),
+		'view_item'           => __( 'View contact', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New contact', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit contact', 'newwpwebsite' ),
+		'update_item'         => __( 'Update contact', 'newwpwebsite' ),
+		'search_items'        => __( 'Search contact', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
+	);
+	$args = array(
+		'label'               => __( 'contact', 'newwpwebsite' ),
+		'description'         => __( 'contact news and reviews', 'newwpwebsite' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
+		'taxonomies'          => array( 'genres' ),	
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
 
-
-
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+		'taxonomies'          => array( 'category' ),
+	);
+	register_post_type( 'contact', $args );
+}
+add_action( 'init', 'contact_post_type', 0 );
 
 
 // Register Custom Navigation Walker
@@ -181,23 +349,23 @@ function subtitle( $post ) {
 
 function testi_post_type() {
 	$labels = array(
-		'name'                => _x( 'Testimonials', 'Post Type General Name', 'website' ),
-		'singular_name'       => _x( 'Testimonials', 'Post Type Singular Name', 'website' ),
-		'menu_name'           => __( 'Testimonials', 'website' ),
-		'parent_item_colon'   => __( 'Parent Testimonials', 'website' ),
-		'all_items'           => __( 'All Testimonials', 'website' ),
-		'view_item'           => __( 'View Testimonials', 'website' ),
-		'add_new_item'        => __( 'Add New Testimonials', 'website' ),
-		'add_new'             => __( 'Add New', 'website' ),
-		'edit_item'           => __( 'Edit Testimonials', 'website' ),
-		'update_item'         => __( 'Update Testimonials', 'website' ),
-		'search_items'        => __( 'Search Testimonials', 'website' ),
-		'not_found'           => __( 'Not Found', 'website' ),
-		'not_found_in_trash'  => __( 'Not found in Trash', 'website' ),
+		'name'                => _x( 'Testimonials', 'Post Type General Name', 'newwpwebsite' ),
+		'singular_name'       => _x( 'Testimonials', 'Post Type Singular Name', 'newwpwebsite' ),
+		'menu_name'           => __( 'Testimonials', 'newwpwebsite' ),
+		'parent_item_colon'   => __( 'Parent Testimonials', 'newwpwebsite' ),
+		'all_items'           => __( 'All Testimonials', 'newwpwebsite' ),
+		'view_item'           => __( 'View Testimonials', 'newwpwebsite' ),
+		'add_new_item'        => __( 'Add New Testimonials', 'newwpwebsite' ),
+		'add_new'             => __( 'Add New', 'newwpwebsite' ),
+		'edit_item'           => __( 'Edit Testimonials', 'newwpwebsite' ),
+		'update_item'         => __( 'Update Testimonials', 'newwpwebsite' ),
+		'search_items'        => __( 'Search Testimonials', 'newwpwebsite' ),
+		'not_found'           => __( 'Not Found', 'newwpwebsite' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'newwpwebsite' ),
 	);
 	$args = array(
-		'label'               => __( 'Testimonials', 'website' ),
-		'description'         => __( 'Testimonials news and reviews', 'website' ),
+		'label'               => __( 'Testimonials', 'newwpwebsite' ),
+		'description'         => __( 'Testimonials news and reviews', 'newwpwebsite' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
 		'taxonomies'          => array( 'genres' ),	
